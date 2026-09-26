@@ -1,6 +1,6 @@
 - name: Install java21
   ansible.builtin.dnf:
-   name:  java-21-openjdk-devel
+   name: java-21-openjdk-devel
    state: present
 
 - name: create user app-user 
@@ -33,7 +33,7 @@
    chdir: /app
 
 - name: copy the jar file
-   ansible.builtin.shell: cp /app/build/libs/*.jar /app/portfolio-service.jar
+  ansible.builtin.shell: cp /app/build/libs/*.jar /app/portfolio-service.jar
 
 - name: copy the service file
   ansible.builtin.copy:
