@@ -1,0 +1,5 @@
+- name: postgres file
+  hosts: all
+  become: yes
+  roles:
+    - postgresql
