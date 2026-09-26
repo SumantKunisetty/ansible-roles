@@ -1,0 +1,5 @@
+- name: portfolio-service
+  hosts: all
+  become: yes
+  tasks:
+    - portfolio-service
