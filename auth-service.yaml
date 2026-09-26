@@ -1,4 +1,4 @@
-- name: auth- systemd_service
+- name: auth-service
   hosts: all
   become: yes
   roles:
