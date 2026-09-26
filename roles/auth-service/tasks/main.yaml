@@ -23,7 +23,7 @@
    remote_src: yes
 
 - name: build the code
-   ansible.builtin.shell: CGO_ENABLED=0 go build -o auth-service ./cmd/server
+   ansible.builtin.shell:CGO_ENABLED=0 go build -o auth-service ./cmd/server
   args:
    chdir: /app
 
