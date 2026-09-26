@@ -1,0 +1,5 @@
+- name: analytics-service
+  hosts: all
+  become: yes
+  roles:
+    - analytics-service
