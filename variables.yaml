@@ -1,5 +1,5 @@
 - name: variables from inventory
-  hosts: all
+  hosts: CONTROLLER
   tasks:
     - name: print URL
       ansible.builtin.debug: 
