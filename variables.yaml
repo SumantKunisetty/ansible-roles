@@ -4,3 +4,14 @@
     - name: print URL
       ansible.builtin.debug: 
         msg: URL -- {{ URL }} COMPONENT -- {{ COMPONENT }}
+  
+- name: variables from playbook
+  hosts: FRONTEND
+  vars:
+    PLAY1: frontend.com
+  vars_files:
+    sample-vars.yaml
+  tasks:
+    - name: print URL
+      ansible.builtin.debug:
+        msg:  
