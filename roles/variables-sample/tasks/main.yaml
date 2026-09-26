@@ -1,5 +1,2 @@
-- name: variables from roles
-  hosts: FRONTEND
-  tasks:
-    - ansible.builtin.debug:
-       msg: FROM_DEFAULT is {{ FROM_DEFAULT }} and FROM_ROLE is {{ FROM_ROLE }} 
+- ansible.builtin.debug:
+   msg: FROM_DEFAULT is {{ FROM_DEFAULT }} and FROM_ROLE is {{ FROM_ROLE }} 
