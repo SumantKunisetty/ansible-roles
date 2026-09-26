@@ -1,11 +1,11 @@
 - name: install python
   ansible.builtin.dnf:
-  name:
-    - python3.12
-    - python3.12-pip
-    - python3.12-devel
-    - gcc
-  state: present
+   name:
+     - python3.12
+     - python3.12-pip
+     - python3.12-devel
+     - gcc
+   state: present
 
 - name: adding the appuser
   ansible.builtin.user:
